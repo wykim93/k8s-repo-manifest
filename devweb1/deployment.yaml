@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: devweb-deployment
-  namespace: front
 spec:
   selector:
     matchLabels:
