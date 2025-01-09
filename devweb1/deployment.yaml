@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: my-devweb
-  replicas: 2
+  replicas: 4
   template:
     metadata:
       labels:
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: devweb-containers
-        image: docker.io/dbgurum/devweb:2.0
+        image: docker.io/dbgurum/devweb:1.0
         ports:
         - containerPort: 80
